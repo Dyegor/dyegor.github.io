@@ -6,7 +6,7 @@ import Buttons from "../buttons/Buttons";
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <NavbarImg />
+            <NavbarImg imgUrl="img/profile.jpg" />
             <Navigation />
             <Buttons />
         </nav>
