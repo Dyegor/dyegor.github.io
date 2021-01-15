@@ -134,3 +134,23 @@ a:hover, a:focus, a:active {
 .text-primary {
     color: #07689f !important;
 }
+
+
+
+/*====================================================
+                   FOOTER
+======================================================*/
+
+
+#footer {
+    background-color: #fafafa;
+    bottom: 0px;
+    color: #a2d5f2;
+    position: fixed;
+    text-align: center;
+    width: 86%;
+}
+
+.copyright {
+    margin-top: 0.5em;
+}
