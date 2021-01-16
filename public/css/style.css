@@ -135,7 +135,40 @@ a:hover, a:focus, a:active {
     color: #07689f !important;
 }
 
+/*==================================================
+                      ABOUT
+====================================================*/
 
+#about {
+    background-color: #fafafa;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+}
+
+.about-my-auto {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-buttons {
+    margin: 50px auto 30px auto;
+    text-align: center;
+    float: left;
+}
+
+.about-heading {
+    padding-top: 0.5em;
+}
+
+.divider {
+    width: 10px;
+    height: auto;
+    display: inline-block;
+}
+
+.social-icons {
+    text-align: center;
+}
 
 /*====================================================
                    FOOTER
