@@ -52,6 +52,30 @@ a:hover, a:focus, a:active {
 }
 
 /*==================================================
+                  SOCIAL-ICON
+====================================================*/
+
+.list-social-icons a {
+    color: #495057;
+}
+
+.list-social-icons a:hover {
+    color: #2196f3;
+}
+
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+}
+
+.list-icons {
+    font-size: 3rem;
+}
+
+.list-icons .list-inline-item i:hover {
+    color: #2196f3;
+}
+
+/*==================================================
                     NAV-BAR
 ====================================================*/
 
