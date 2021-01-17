@@ -52,27 +52,38 @@ a:hover, a:focus, a:active {
 }
 
 /*==================================================
-                  SOCIAL-ICON
+                  SECTION (Generic)
 ====================================================*/
 
-.list-social-icons a {
-    color: #495057;
+.heading-border {
+    width: 60px;
+    height: 10px;
+    background-color: #2196f3;
+    margin: 0 auto 20px auto;
 }
 
-.list-social-icons a:hover {
-    color: #2196f3;
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem;
+    }
 }
 
-.list-social-icons a .fa-lg {
-    font-size: 1.75rem;
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
 }
 
-.list-icons {
-    font-size: 3rem;
+.bg-primary {
+    background-color: #07689f !important;
 }
 
-.list-icons .list-inline-item i:hover {
-    color: #2196f3;
+.text-primary {
+    color: #07689f !important;
 }
 
 /*==================================================
@@ -125,41 +136,6 @@ a:hover, a:focus, a:active {
 }
 
 /*==================================================
-                  SECTION (Generic)
-====================================================*/
-
-.heading-border {
-    width: 60px;
-    height: 10px;
-    background-color: #2196f3;
-    margin: 0 auto 20px auto;
-}
-
-@media (min-width: 768px) {
-    section.resume-section {
-        min-height: 100vh;
-    }
-    section.resume-section .resume-item .resume-date {
-        min-width: 18rem;
-    }
-}
-
-@media (min-width: 992px) {
-    section.resume-section {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
-    }
-}
-
-.bg-primary {
-    background-color: #07689f !important;
-}
-
-.text-primary {
-    color: #07689f !important;
-}
-
-/*==================================================
                       ABOUT
 ====================================================*/
 
@@ -191,6 +167,60 @@ a:hover, a:focus, a:active {
 }
 
 .social-icons {
+    text-align: center;
+}
+
+/*==================================================
+                  SOCIAL-ICON
+====================================================*/
+
+.list-social-icons a {
+    color: #495057;
+}
+
+.list-social-icons a:hover {
+    color: #2196f3;
+}
+
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+}
+
+.list-icons {
+    font-size: 3rem;
+}
+
+.list-icons .list-inline-item i:hover {
+    color: #2196f3;
+}
+
+/*====================================================
+                      SKILLS
+======================================================*/
+
+.hero-tech-stack-section {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    justify-content: center;
+}
+
+.tech-stack-item {
+    text-align: center;
+    margin: 5px;
+}
+
+.tech-stack-item-subtext {
+    font-size: font-size-sm;
+    margin-top: 5px;
+    color: #a2d5f2;
+}
+
+.skill-icon {
+    color: #ff7e67;
+}
+
+.skills-header {
+    margin-top: 2em;
     text-align: center;
 }
 
