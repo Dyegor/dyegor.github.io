@@ -1,6 +1,7 @@
 import React from "react";
 import ContactButton from "./ContactButton";
 import DownloadButton from "./DownloadButton";
+import Divider from "../../divider/Divider";
 
 export default function AboutButtons() {
     return (
@@ -10,7 +11,9 @@ export default function AboutButtons() {
                 buttonName="Contact"
                 buttonHref="mailto:yegorov.dmt@gmail.com"
             />
-            <div class="divider" />
+            <Divider
+                style={{width: '10px'}}
+            />
             <DownloadButton
                 dataFilter="all"
                 buttonName="Download CV"
