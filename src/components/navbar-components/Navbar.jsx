@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarImg from "./NavbarImg";
 import Navigation from "./Navigation";
-import Buttons from "../buttons/Buttons";
+import Buttons from "../buttons/navbar-buttons/Buttons";
 
 export default function Navbar() {
     return (
