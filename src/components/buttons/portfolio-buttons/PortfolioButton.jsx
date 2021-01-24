@@ -4,6 +4,8 @@ import Button from '@material-ui/core/Button';
 
 export default function LiveButton(props) {
     return (
-        <Button variant="outlined" color="primary" href={props.buttonHref}>{props.buttonName}</Button>
+        <div className="portfolio-button">
+            <Button variant="contained" color="secondary" href={props.buttonHref}>{props.buttonName}</Button>
+        </div>
     );
 }
