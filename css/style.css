@@ -143,7 +143,7 @@ a:hover, a:focus, a:active {
 ====================================================*/
 
 #about {
-    background-image: -webkit-linear-gradient(165deg, #fafafa 70%, #a2d5f2 30%);
+    background-image: -webkit-linear-gradient(40deg, #fafafa 70%, #a2d5f2 35%);
 }
 
 @media (min-width: 300px) {
@@ -217,7 +217,7 @@ a:hover, a:focus, a:active {
                       SKILLS
 ======================================================*/
 #skills {
-    background-image: -webkit-linear-gradient(165deg, #fafafa 70%, #a2d5f2 30%);
+    background-image: -webkit-linear-gradient(40deg, #fafafa 70%, #a2d5f2 35%);
 }
 
 .hero-section {
