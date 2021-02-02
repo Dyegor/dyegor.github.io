@@ -57,7 +57,7 @@ a:hover, a:focus, a:active {
     margin: 0 auto 20px auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 300px) {
     section.resume-section {
         min-height: 100vh;
     }
