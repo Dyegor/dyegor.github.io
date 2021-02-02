@@ -1,6 +1,8 @@
 /*GENERAL STYLE*/
 
 body {
+    background-color: #fafafa;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
     font-family: 'Open Sans', serif;
     padding-top: 54px;
     color: #868e96;
@@ -142,11 +144,6 @@ a:hover, a:focus, a:active {
                       ABOUT
 ====================================================*/
 
-#about {
-    background-color: #fafafa;
-    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
-}
-
 @media (min-width: 300px) {
     .about-my-auto {
         padding-left: 2em;
@@ -217,10 +214,6 @@ a:hover, a:focus, a:active {
 /*====================================================
                       SKILLS
 ======================================================*/
-#skills {
-    background-color: #fafafa;
-    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
-}
 
 .hero-section {
     margin-top: 3em;
@@ -264,11 +257,6 @@ a:hover, a:focus, a:active {
 /*====================================================
                    PORTFOLIO
 ======================================================*/
-
-#portfolio {
-    background-color: #fafafa;
-    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
-}
 
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
