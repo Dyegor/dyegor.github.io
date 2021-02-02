@@ -1,0 +1,332 @@
+/*GENERAL STYLE*/
+
+body {
+    font-family: 'Open Sans', serif;
+    padding-top: 54px;
+    color: #868e96;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+.card {
+    border-radius: 5%;
+}
+
+h2, h4, h5, h6 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #07689f;
+}
+
+h1, h3 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+a {
+    color: #07689f;
+}
+
+a:hover, a:focus, a:active {
+    color: #ff7e67;
+}
+
+/*==================================================
+                  SECTION (Generic)
+====================================================*/
+
+.heading-border {
+    width: 60px;
+    height: 10px;
+    background-color: #2196f3;
+    margin: 0 auto 20px auto;
+}
+
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem;
+    }
+}
+
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+.bg-primary {
+    background-color: #07689f !important;
+}
+
+.text-primary {
+    color: #07689f !important;
+}
+
+/*==================================================
+                    NAV-BAR
+====================================================*/
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    padding-left: 1em;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 19rem;
+        height: 100vh;
+    }
+
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: 20% auto 0;
+        padding: 0.5rem;
+    }
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+/*==================================================
+                      ABOUT
+====================================================*/
+
+#about {
+    background-image: linear-gradient(160deg, #fafafa 60%, #2196f3 45%);
+}
+
+@media (min-width: 300px) {
+    .about-my-auto {
+        padding-left: 2em;
+    }
+    
+    h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+}
+
+.about-my-auto {
+    padding-top: 1em;
+    margin-top: 1em;
+    margin-right: auto;
+}
+
+.about-buttons {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    float: left;
+}
+
+.about-heading {
+    color: #a2d5f2;
+}
+
+.about-description {
+    font-size: 1.2em;
+    color: #a2d5f2;
+    width: 35em; 
+}
+
+.divider {
+    height: auto;
+    display: inline-block;
+}
+
+/*==================================================
+                  SOCIAL-ICON
+====================================================*/
+
+.list-social-icons a {
+    color: #495057;
+}
+
+.list-social-icons a:hover {
+    color: #2196f3;
+}
+
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+}
+
+.list-icons {
+    font-size: 3rem;
+}
+
+.social-icons {
+    margin-left: 1em;
+}
+
+.list-icons .list-inline-item i:hover {
+    color: #2196f3;
+}
+
+/*====================================================
+                      SKILLS
+======================================================*/
+
+.hero-tech-stack-section {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    justify-content: center;
+}
+
+.tech-stack-item {
+    text-align: center;
+    margin: 5px;
+}
+
+.tech-stack-item-subtext {
+    font-size: font-size-sm;
+    margin-top: 5px;
+    color: #a2d5f2;
+}
+
+.skill-icon {
+    color: #ff7e67;
+}
+
+.skills-header {
+    margin-top: 2em;
+    text-align: center;
+}
+
+/*====================================================
+                   PORTFOLIO
+======================================================*/
+
+#portfolio {
+    background-color: #fafafa;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    opacity: 0;
+    background: rgba(54, 160, 245, 0.73);
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color: white;
+}
+
+.col-12 {
+    height: 17vh;
+}
+
+.portfolio {
+    padding-top: 3em;
+}
+
+.portfolio-page-header {
+    font-family: 'Merriweather', serif;
+}
+
+.portfolio-header {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff7e67;
+    display: table;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.portfolio-button {
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.img-fluid, .caption-port {
+    border-radius: 5%;
+}
+
+.caption-port {
+    border-radius: 5%;
+}
+
+/*====================================================
+                   FOOTER
+======================================================*/
+.container {
+    color: indigo;
+    font-size: 1.5em;
+    text-align: center;
+}
