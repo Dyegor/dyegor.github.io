@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
 a {
@@ -216,16 +216,32 @@ a:hover, a:focus, a:active {
 /*====================================================
                       SKILLS
 ======================================================*/
+#skills {
+    background-image: linear-gradient(165deg, #fafafa 70%, #a2d5f2 30%);
+}
+
+.hero-section {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .hero-tech-stack-section {
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative;
+    border: solid 2px;
+    border-color: #07689f;
+    border-radius: 5%;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 130px);
     justify-content: center;
 }
 
 .tech-stack-item {
+    margin-top: 3em;
+    margin-bottom: 3em;
     text-align: center;
-    margin: 5px;
 }
 
 .tech-stack-item-subtext {
@@ -239,7 +255,7 @@ a:hover, a:focus, a:active {
 }
 
 .skills-header {
-    margin-top: 2em;
+    margin-bottom: 3em;
     text-align: center;
 }
 
