@@ -2,10 +2,9 @@
 
 body {
     background-color: #fafafa;
-    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
     font-family: 'Open Sans', serif;
-    padding-top: 54px;
-    color: #868e96;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 @media (min-width: 992px) {
@@ -14,30 +13,16 @@ body {
     }
 }
 
-.card {
-    border-radius: 5%;
-}
-
 h2, h4, h5, h6 {
     font-family: 'Saira Extra Condensed', serif;
+    font-size: 3em;
     font-weight: 700;
-    text-transform: uppercase;
     color: #07689f;
 }
 
 h1, h3 {
     font-family: 'Saira Extra Condensed', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
-}
-
-h2 {
-    font-size: 5rem;
+    font-weight: 500;
 }
 
 a {
@@ -86,12 +71,18 @@ a:hover, a:focus, a:active {
 /*==================================================
                     NAV-BAR
 ====================================================*/
-.navbar {
-    padding: 0;
+
+#navBar a {
+    color: #ff7e67;
+}
+
+.navbar-toggler {
+    margin-left: 5em;
+    background-color: #ff7e67;
 }
 
 .navbar-nav {
-    padding-left: 1em;
+    padding-left: 5em;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -99,7 +90,11 @@ a:hover, a:focus, a:active {
     text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
+.container-fluid {
+    padding: 0;
+}
+
+@media (max-width: 992px) {
     #sideNav {
         text-align: center;
         position: fixed;
@@ -110,7 +105,6 @@ a:hover, a:focus, a:active {
         width: 19rem;
         height: 100vh;
     }
-
     #sideNav .navbar-brand {
         display: flex;
         margin: 20% auto 0;
@@ -138,6 +132,10 @@ a:hover, a:focus, a:active {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block;
     }
+
+    .navbar {
+        padding: 0;
+    }
 }
 
 /*==================================================
@@ -148,7 +146,6 @@ a:hover, a:focus, a:active {
     .about-my-auto {
         padding-left: 2em;
     }
-    
     h1 {
         font-size: 5rem;
         line-height: 5.5rem;
@@ -157,11 +154,13 @@ a:hover, a:focus, a:active {
 
 .about-my-auto {
     padding-top: 5em;
+    padding-left: 6em;
     margin-top: 1em;
     margin-right: auto;
 }
 
 .about-buttons {
+    padding-right: 5em;
     margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
@@ -169,13 +168,14 @@ a:hover, a:focus, a:active {
 }
 
 .about-heading {
-    color: #a2d5f2;
+    color: #81c3e9;
 }
 
 .about-description {
+    font-style: italic;
     font-size: 1.2em;
-    color: #a2d5f2;
-    width: 35em; 
+    color: #81c3e9;
+    width: 30em;
 }
 
 .divider {
@@ -229,13 +229,13 @@ a:hover, a:focus, a:active {
     border-color: #07689f;
     border-radius: 5%;
     display: grid;
-    grid-template-columns: repeat(4, 130px);
+    grid-template-columns: repeat(4, 10em);
     justify-content: center;
 }
 
 .tech-stack-item {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -246,10 +246,12 @@ a:hover, a:focus, a:active {
 }
 
 .skill-icon {
-    color: #ff7e67;
+    height: 5em;
+    width: 5em;
 }
 
 .skills-header {
+    color: #81c3e9;
     margin-bottom: 3em;
     text-align: center;
 }
@@ -269,7 +271,7 @@ a:hover, a:focus, a:active {
 #portfolio .portfolio-item .portfolio-link .caption-port {
     position: absolute;
     width: 100%;
-    height: 95%;
+    height: 100%;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
@@ -300,6 +302,10 @@ a:hover, a:focus, a:active {
     padding-top: 3em;
 }
 
+.portfolio-content {
+    padding-left: 3em;
+}
+
 .portfolio-page-header {
     font-family: 'Merriweather', serif;
 }
@@ -313,16 +319,43 @@ a:hover, a:focus, a:active {
 }
 
 .portfolio-button {
-    margin-top: 20px;
+    margin-top: 1em;
 }
 
 .portfolio-item {
+    display: flex;
     padding-bottom: 2em;
     text-align: center;
 }
 
-.portfolio-link {
-    padding-top: 1em;
+.portfolio-item-description {
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #07689f;
+    float: left;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+.portfolio-skill-item {
+    margin-left: .5em;
+}
+
+.card {
+    border-radius: 5%;
+    padding-bottom: 2em;
+    width: 35em;
+}
+
+.card-title {
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+
+.card-body {
+    padding-top: 0;
 }
 
 .img-fluid, .caption-port {
@@ -336,6 +369,7 @@ a:hover, a:focus, a:active {
 /*====================================================
                    FOOTER
 ======================================================*/
+
 .container {
     color: indigo;
     font-size: 1.5em;
