@@ -46,6 +46,9 @@ section.resume-section {
     border-bottom: 1px solid #dee2e6;
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
+    margin-left: 6em;
+    margin-top: 1em;
+    margin-right: auto;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -56,7 +59,7 @@ section.resume-section .resume-item .resume-date {
     section.resume-section {
         min-height: 100vh;
     }
-    section.resume-section .resume-item .resume-date {
+    section.resume-section {
         min-width: 18rem;
     }
 }
@@ -160,13 +163,6 @@ section.resume-section .resume-item .resume-date {
     }
 }
 
-
-.about-my-auto {
-    padding-left: 6em;
-    margin-top: 1em;
-    margin-right: auto;
-}
-
 .about-buttons {
     padding-right: 5em;
     margin-top: 1em;
@@ -227,6 +223,15 @@ section.resume-section .resume-item .resume-date {
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        min-height: 100vh;
+    }
+    .hero-section {
+        min-width: 18rem;
+    }
 }
 
 .hero-tech-stack-section {
@@ -343,25 +348,6 @@ section.resume-section .resume-item .resume-date {
     padding-left: 1em;
     padding-bottom: 1em;
     padding-top: 2em;
-}
-
-.portfolio-skill-item {
-    margin-left: .5em;
-}
-
-.card {
-    border-radius: 5%;
-    padding-bottom: 2em;
-    width: 50%;
-}
-
-.card-title {
-    padding-top: .5em;
-    padding-bottom: 0;
-}
-
-.card-body {
-    padding-top: 0;
 }
 
 .img-fluid, .caption-port {
