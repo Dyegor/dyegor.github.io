@@ -55,6 +55,16 @@ section.resume-section .resume-item .resume-date {
     min-width: none;
 }
 
+@media (max-width: 550px) {
+    .hero-tech-stack-section {
+        margin-right: 3em;
+        width: 80%;
+    }
+    section.resume-section {
+        margin-left: 1em;
+    }
+}
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
@@ -88,7 +98,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 .navbar-toggler {
-    margin-left: 5em;
+    margin-top: .5em;
+    margin-left: 1em;
     background-color: #ff7e67;
 }
 
@@ -143,7 +154,6 @@ section.resume-section .resume-item .resume-date {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block;
     }
-
     .navbar {
         padding: 0;
     }
@@ -165,10 +175,18 @@ section.resume-section .resume-item .resume-date {
 
 .about-buttons {
     padding-right: 5em;
-    margin-top: 1em;
+    margin-top: 1.5em;
     margin-bottom: 1em;
     text-align: center;
     float: left;
+}
+
+@media (max-width: 550px) {
+    .about-buttons {
+        margin-left: 1.5em;
+        width: 80%;
+        display: grid;
+    }
 }
 
 .about-heading {
@@ -237,7 +255,6 @@ section.resume-section .resume-item .resume-date {
 .hero-tech-stack-section {
     padding-left: 2em;
     padding-right: 2em;
-    position: relative;
     border: solid 2px;
     border-color: #07689f;
     border-radius: 5%;
