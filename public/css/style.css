@@ -1,39 +1,26 @@
 /*GENERAL STYLE*/
 
 body {
+    background-color: #fafafa;
     font-family: 'Open Sans', serif;
-    padding-top: 54px;
-    color: #868e96;
 }
 
 @media (min-width: 992px) {
     body {
         padding-top: 0;
-        padding-left: 17rem;
     }
 }
 
 h2, h4, h5, h6 {
     font-family: 'Saira Extra Condensed', serif;
+    font-size: 3em;
     font-weight: 700;
-    text-transform: uppercase;
     color: #07689f;
 }
 
 h1, h3 {
     font-family: 'Saira Extra Condensed', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #343a40;
-}
-
-h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
-}
-
-h2 {
-    font-size: 3.5rem;
+    font-weight: 500;
 }
 
 a {
@@ -42,13 +29,6 @@ a {
 
 a:hover, a:focus, a:active {
     color: #ff7e67;
-}
-
-.subheading {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Saira Extra Condensed', serif;
-    font-size: 1.35rem;
 }
 
 /*==================================================
@@ -62,11 +42,34 @@ a:hover, a:focus, a:active {
     margin: 0 auto 20px auto;
 }
 
+section.resume-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    margin-left: 6em;
+    margin-top: 1em;
+    margin-right: auto;
+}
+
+section.resume-section .resume-item .resume-date {
+    min-width: none;
+}
+
+@media (max-width: 550px) {
+    .hero-tech-stack-section {
+        margin-right: 3em;
+        width: 80%;
+    }
+    section.resume-section {
+        margin-left: 1em;
+    }
+}
+
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
     }
-    section.resume-section .resume-item .resume-date {
+    section.resume-section {
         min-width: 18rem;
     }
 }
@@ -90,12 +93,30 @@ a:hover, a:focus, a:active {
                     NAV-BAR
 ====================================================*/
 
-#sideNav .navbar-nav .nav-item .nav-link {
+#navBar a {
+    color: #ff7e67;
+}
+
+.navbar-toggler {
+    margin-top: .5em;
+    margin-left: 1em;
+    background-color: #ff7e67;
+}
+
+.navbar-nav {
+    padding-left: 5em;
+}
+
+.navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
+.container-fluid {
+    padding: 0;
+}
+
+@media (max-width: 992px) {
     #sideNav {
         text-align: center;
         position: fixed;
@@ -133,40 +154,55 @@ a:hover, a:focus, a:active {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block;
     }
+    .navbar {
+        padding: 0;
+    }
 }
 
 /*==================================================
                       ABOUT
 ====================================================*/
 
-#about {
-    background-color: #fafafa;
-    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
-}
-
-.about-my-auto {
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+@media (min-width: 300px) {
+    .about-my-auto {
+        padding-left: 2em;
+    }
+    h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
 }
 
 .about-buttons {
-    margin: 50px auto 30px auto;
+    padding-right: 5em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     text-align: center;
     float: left;
 }
 
+@media (max-width: 550px) {
+    .about-buttons {
+        margin-left: 1.5em;
+        width: 80%;
+        display: grid;
+    }
+}
+
 .about-heading {
-    padding-top: 0.5em;
+    color: #81c3e9;
+}
+
+.about-description {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #81c3e9;
+    width: 30em;
 }
 
 .divider {
     height: auto;
     display: inline-block;
-}
-
-.social-icons {
-    text-align: center;
 }
 
 /*==================================================
@@ -189,6 +225,10 @@ a:hover, a:focus, a:active {
     font-size: 3rem;
 }
 
+.social-icons {
+    margin-left: 1em;
+}
+
 .list-icons .list-inline-item i:hover {
     color: #2196f3;
 }
@@ -197,15 +237,36 @@ a:hover, a:focus, a:active {
                       SKILLS
 ======================================================*/
 
+.hero-section {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        min-height: 100vh;
+    }
+    .hero-section {
+        min-width: 18rem;
+    }
+}
+
 .hero-tech-stack-section {
+    padding-left: 2em;
+    padding-right: 2em;
+    border: solid 2px;
+    border-color: #07689f;
+    border-radius: 5%;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 10em);
     justify-content: center;
 }
 
 .tech-stack-item {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     text-align: center;
-    margin: 5px;
 }
 
 .tech-stack-item-subtext {
@@ -215,22 +276,19 @@ a:hover, a:focus, a:active {
 }
 
 .skill-icon {
-    color: #ff7e67;
+    height: 5em;
+    width: 5em;
 }
 
 .skills-header {
-    margin-top: 2em;
+    color: #81c3e9;
+    margin-bottom: 3em;
     text-align: center;
 }
 
 /*====================================================
                    PORTFOLIO
 ======================================================*/
-
-#portfolio {
-    background-color: #fafafa;
-    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
-}
 
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
@@ -266,6 +324,18 @@ a:hover, a:focus, a:active {
     color: white;
 }
 
+.col-12 {
+    height: 17vh;
+}
+
+.portfolio {
+    padding-top: 3em;
+}
+
+.portfolio-content {
+    padding-left: 3em;
+}
+
 .portfolio-page-header {
     font-family: 'Merriweather', serif;
 }
@@ -273,17 +343,28 @@ a:hover, a:focus, a:active {
 .portfolio-header {
     font-family: 'Montserrat', sans-serif;
     color: #ff7e67;
-    display:table;
+    display: table;
     font-size: 30px;
-    margin:10px auto;
+    margin: 10px auto;
 }
 
 .portfolio-button {
-    margin-top: 20px;
+    margin-top: 1em;
 }
 
 .portfolio-item {
-    text-align: center;
+    padding-bottom: 3em;
+}
+
+.portfolio-item-description {
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #07689f;
+    float: left;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 2em;
 }
 
 .img-fluid, .caption-port {
@@ -298,16 +379,8 @@ a:hover, a:focus, a:active {
                    FOOTER
 ======================================================*/
 
-
-#footer {
-    background-color: #fafafa;
-    bottom: 0px;
-    color: #a2d5f2;
-    position: fixed;
+.container {
+    color: indigo;
+    font-size: 1.5em;
     text-align: center;
-    width: 86%;
-}
-
-.copyright {
-    margin-top: 0.5em;
 }
