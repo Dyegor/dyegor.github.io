@@ -1,14 +1,16 @@
 import React from "react";
-import AboutHeader from "./AboutHeader";
-import HeroSkills from "./hero-components/HeroSkills";
+import AboutHeading from "./AboutHeading";
+import AboutSubheading from "./AboutSubheading";
+import AboutDescription from "./AboutDescription";
 import SocialIcons from "../social-icons-components/SocialIcons";
 
 export default function About() {
     return (
-        <div class="about-my-auto">
-            <AboutHeader />
+        <section className="resume-section d-column">
+            <AboutHeading />
+            <AboutSubheading />
+            <AboutDescription />
             <SocialIcons />
-            <HeroSkills />
-        </div>
+        </section>
     );
 }
