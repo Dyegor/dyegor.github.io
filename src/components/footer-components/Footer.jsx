@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div id="footer">
-            <p class="copyright">
+        <footer className="footer mt-auto py-3">
+            <div className="container">
                 <b>© 2020 Dmitriy Yegorov</b>
-            </p>
-        </div>
+            </div>
+        </footer>
     );
 }
