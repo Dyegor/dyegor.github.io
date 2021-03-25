@@ -6,6 +6,7 @@ export default function Navigation() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav">
                     <NavLink title="About" link="/" />
+                    <NavLink title="Skills" link="/skills" />
                     <NavLink title="Portfolio" link="/portfolio" />
                 </ul>
             </div>
