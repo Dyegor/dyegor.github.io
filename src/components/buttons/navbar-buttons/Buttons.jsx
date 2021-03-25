@@ -5,19 +5,19 @@ import Divider from "../../divider/Divider";
 
 export default function AboutButtons() {
     return (
-        <div className="port-head-cont about-buttons">
+        <div className="about-buttons">
+            <DownloadButton
+                dataFilter="all"
+                buttonName="Download CV"
+                buttonHref="static/Dmitriy_ Yegorov_CV.pdf"
+            />
+            <Divider
+                style={{ width: '10px' }}
+            />
             <ContactButton
                 dataFilter="consulting"
                 buttonName="Contact"
                 buttonHref="mailto:yegorov.dmt@gmail.com"
-            />
-            <Divider
-                style={{width: '10px'}}
-            />
-            <DownloadButton
-                dataFilter="all"
-                buttonName="Download CV"
-                buttonHref="static/Dmitriy_Yegorov_CV.pdf"
             />
         </div>
     );
