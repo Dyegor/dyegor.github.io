@@ -4,7 +4,7 @@ import PortfolioHeader from "./PortfolioHeader";
 
 export default function Portfolio() {
     return (
-        <div>
+        <div className="portfolio">
             <PortfolioHeader />
             <PortfolioContent />
         </div>
